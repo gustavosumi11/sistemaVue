@@ -1,18 +1,28 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <HeaderPage/>
+<CarouselPage/>
+  <router-view/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
+
+import HeaderPage from './components/Header/HeaderPage.vue';
+import CarouselPage from './components/Carousel/CarouselPage.vue'
+
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    HeaderPage,
+    CarouselPage,
+  
+   
+}
 }
 </script>
 
@@ -23,6 +33,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  background-color: #F5F5F5;
 }
 </style>
